@@ -11,7 +11,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 5rem 0rem 1rem;
+    padding: 0 3rem 0 1rem;
 }
 header img{
     width: 20rem;
@@ -55,8 +55,48 @@ header nav ul li a{
 }
 
 
+.info, .events-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(255, 179, 1);
+}
+.events, .events-section{
+    text-align: center;
+    background-color: white;
 
-@media only screen and (max-width: 760px) {
+}
+.events h2{
+    font-size: 3rem;
+}
+.school-image img{
+    width: 35rem;
+    clip-path: circle(50% at 25% 50%);  
+}
+.robotics img{
+    width: 30rem;
+    clip-path: circle(50% at 60% 50%); 
+}
+.description{
+    max-height: 100%;
+    padding-right: 3rem ;
+    text-align: justify;
+}
+.events-section .description{
+    text-align: center;
+}
+.description h2{
+    font-size: 2rem;
+}
+.description p{
+    font-size: 1rem;
+}
+.description ul{
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 768px) {
     .landing{
         height: 50vh;
         background-size: 50rem;
@@ -65,6 +105,41 @@ header nav ul li a{
 
     .landing h1{
         font-size: 2.5rem;
+    }
+    header{
+        padding: 0 2rem 0 1rem;
+    }
+    header nav ul{
+        gap: 1rem;
+    
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header img{
+        width: 15rem;
+    }
+    .school-image img{
+        width: 20rem;
+        clip-path: circle(50% at 25% 50%);  
+    }
+    .robotics img{
+        width: 20rem;
+        clip-path: circle(50% at 60% 50%);
+    }
+    .description{
+        height: 100%;
+        max-height: 100%;
+        padding-right: 2rem ;
+        text-align: justify;
+    }
+    .description h2{
+        font-size: 2em;
+    }
+    .description p{
+        font-size: 1em;
+    }
+    .description ul{
+        font-size: 1em;
     }
 }
 
@@ -77,5 +152,48 @@ header nav ul li a{
 
     .landing h1{
         font-size: 2rem;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    header nav::before{
+        content: " ";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: flex;
+    }
+    header nav ul{
+        padding-left: 0;
+    }
+    .info, .events-section{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .school-image img, .robotics img{
+        width: 15rem;
+        clip-path: circle(70% at 50% 50%);  
+        padding-top: 1rem;
+    }
+    .description{
+        max-height: 100%;
+        padding-right: 3rem ;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .description h2{
+        font-size: 2rem;
+    }
+    .description p{
+        font-size: 1rem;
+    }
+    .description ul{
+        font-size: 1em;
     }
 }
