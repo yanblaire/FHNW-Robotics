@@ -1,3 +1,8 @@
+:root{
+    --school_color: rgb(255, 174, 0);
+    --footer_color: rgb(102, 102, 101);
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -49,11 +54,25 @@ header nav ul li a{
     height: 100%;
     margin: 0px;
 
-    color: rgb(255, 174, 0);
+    color: var(--school_color);
     font-size: 5rem;
     text-shadow: 3px 3px 2px black;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    background-color: var(--footer_color);
+    color: aliceblue;
+}
+
+footer .description{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
 
 .info, .events-section{
     display: flex;
@@ -95,6 +114,7 @@ header nav ul li a{
 .description ul{
     font-size: 1em;
 }
+
 
 @media only screen and (max-width: 768px) {
     .landing{
@@ -140,6 +160,21 @@ header nav ul li a{
     }
     .description ul{
         font-size: 1em;
+    }
+
+    footer{
+        height: 25vh;
+        font-size: 0.8rem;
+    }
+
+    footer .description{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    footer img{
+        height: 50%;
+        width: 100%;
     }
 }
 
@@ -195,5 +230,15 @@ header nav ul li a{
     }
     .description ul{
         font-size: 1em;
+    }
+
+    footer{
+        height: 25vh;
+        font-size: 0.2rem;
+    }
+
+    footer .description{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
     }
 }
