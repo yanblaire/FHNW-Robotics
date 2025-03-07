@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color:antiquewhite;
+    height: 200vh;
 }
 header{
     background-color: rgb(255, 179, 1);
@@ -28,6 +29,32 @@ header nav ul li a{
     color: black;
     text-transform: uppercase;
 }
+
+.landing{
+    height: 70vh;
+    /* width: 100vw; */
+    text-align: center;
+
+    background-image: url("assets/landing_page_background_photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.landing h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+
+    color: rgb(255, 174, 0);
+    font-size: 5rem;
+    text-shadow: 3px 3px 2px black;
+}
+
+
 .info{
     display: flex;
     align-items: center;
@@ -56,6 +83,15 @@ header nav ul li a{
 }
 
 @media only screen and (max-width: 760px) {
+    .landing{
+        height: 50vh;
+        background-size: 50rem;
+        background-position: top;
+    }
+
+    .landing h1{
+        font-size: 2.5rem;
+    }
     header{
         padding: 0 2rem 0 1rem;
     }
@@ -90,6 +126,15 @@ header nav ul li a{
 }
 
 @media screen and (max-width: 480px) {
+    .landing{
+        height: 30vh;
+        background-size: 40rem;
+        background-position: top;
+    }
+
+    .landing h1{
+        font-size: 2rem;
+    }
     header{
         display: flex;
         justify-content: center;
